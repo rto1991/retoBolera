@@ -1,5 +1,3 @@
-"use strict";
-
 function calcularPuntuacion(input) {
   const tiradas = input.split(" & ");
   let puntuacion = 0;
@@ -24,7 +22,7 @@ function calcularPuntuacion(input) {
           } else if (tiradas[i + 1].includes("10")) {
             suma += 10 + parseInt(tiradas[i + 1][0]);
           } else {
-            suma += 10 + parseInt(tiradas[i + 1][2]);
+            suma += 10 + parseInt(tiradas[i + 1]);
           }
         } else {
           suma += parseInt(bolos[j]);
